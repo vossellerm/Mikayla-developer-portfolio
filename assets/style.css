@@ -17,23 +17,24 @@ h1.name {
   font-size: 52px;
   display: block;
   position: absolute;
-  left: 5%;
-  top: 20px;
-  margin: 0;
+  left: 40px;
+
+  margin: 20px 0;
   background-color: #5a2575;
 }
 
 ul {
   list-style-type: none;
-  margin: 0 0 0 70%;
   position: absolute;
-  top: 37px;
+
   background-color: #5a2575;
+  right: 40px;
+  margin: 37px 0;
 }
 
 li {
   display: inline;
-  padding: 0 10px;
+  padding: 0 20px;
   font-size: 22px;
   background-color: #5a2575;
 }
@@ -47,40 +48,57 @@ h2 {
   font-size: 40px;
   color: #c9a8f1;
   text-indent: 20px;
+  display: block;
+  position: absolute;
 }
 /* TODO: Format About Me Section */
 /* Title and text on left, image on right */
-article #about {
-  position: absolute;
-  display: block;
-  height: min-content;
+
+#about {
+  height: 500px;
+  position: relative;
+  margin: 20px 0;
 }
 
 img.profile {
-  width: 30%;
-  margin: 0 10%;
-  position: relative;
-  left: 50%;
+  height: 300px;
+  position: absolute;
   display: inline;
+  border-radius: 50%;
+  margin: 100px 0 50px;
+  right: 100px;
 }
 
 p.bio {
   display: block;
-  width: 50%;
   font-size: large;
   line-height: 1.5;
   text-align: justify;
-  position: relative;
-  bottom: 200px;
-  margin-left: 10%;
-  width: 40%;
+  position: absolute;
+  margin: 140px 0 90px;
+  width: 400px;
+  height: 220px;
+  left: 100px;
 }
 
 /* TODO: Format My Work Section */
 /* Title on left */
 /* Application 1 image length of screen, text in corner */
-#equivont {
-  width: 100%;
+h3 {
+  text-align: center;
+  background-color: transparent;
+  margin: 0;
+}
+
+section.equivont {
+  position: relative;
+}
+
+h3.equivont {
+  font-size: 70px;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
 }
 /* Application 2-5 two images per row, text bottom center */
 
