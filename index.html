@@ -9,20 +9,122 @@
   </head>
   <body>
     <!-- TODO: Header with My Name-->
-
     <!-- TODO: Navigation bar: About Me, My Work, Contact Me -->
     <!-- TODO: Link Nav Bar to sections-->
+    <header>
+      <h1>Mikayla Vosseller</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- TODO: About Me Section -->
     <!-- TODO: Photo -->
     <!-- TODO: About Me Bio -->
+    <article id="about">
+      <h2>About Me</h2>
+      <img
+        src="images/profile.png"
+        alt="Mikayla Vosseller and her horse"
+        class="profile"
+      />
+      <p>
+        Mikayla Vosseller is an avid equestrian that combines her passion for
+        horse sports and marketing in her current role as the Marketing Manager
+        at Equivont, an equestrian's one-stop-shop for products and services.
+        Mikayla uses her digitial media and marketing skills to help small
+        equestrian businesses elevate their online presence, whether it be
+        through a new website or current social media.
+      </p>
+    </article>
 
     <!-- TODO: My Work Section -->
     <!-- TODO: First Application, title & larger img than rest, link to application -->
-    <!-- TODO: Second - Fourth Application, grid 2x2 with titles, link to applications -->
+    <!-- TODO: Second - Fourth Application, grid 2x2 with titles, link to applications that open in new tab -->
+    <article id="work">
+      <h2>My Work</h2>
+      <section class="equivont">
+        <h2>Equivont</h2>
+        <a href="https://www.equivont.com/" target="_blank"
+          ><img
+            src="images/Equivont.png"
+            alt="Dressage horse posing with black background"
+        /></a>
+      </section>
+      <section class="sjc-cds">
+        <h2>San Juan Capistrano Chapter of the California Dressage Society</h2>
+        <a href="https://www.sjc-cds.org/" target="_blank"
+          ><img
+            src="images/SJC-CDS.jpeg"
+            alt="Dressage rider holding reins on horse with braids"
+        /></a>
+      </section>
+      <section class="coastline">
+        <h2>Coastline Hunters & Jumpers</h2>
+        <a href="https://www.coastlinehuntersandjumpers.com/" target="_blank"
+          ><img
+            src="images/Coastline.jpeg"
+            alt="Showjumping horse and rider landing off of Grand Prix oxer"
+        /></a>
+      </section>
+      <section class="sps">
+        <h2>Sarah Pollock Sporthorses</h2>
+        <a href="https://www.sarahpollocksporthorses.com/" target="_blank"
+          ><img
+            src="images/SPS.jpeg"
+            alt="Showjumping horse and rider jumping an oxer"
+        /></a>
+      </section>
+      <section class="sjcec">
+        <h2>San Juan Capistrano Equestrian Coalition</h2>
+        <a href="https://sanjuanequestrian.org/" target="_blank"
+          ><img src="images/SJCEC.jpeg" alt="Girl handwalking horse"
+        /></a>
+      </section>
+    </article>
 
     <!-- TODO: Contac Me Section -->
-    <!-- TODO: Contact Form with name and email -->
+    <!-- TODO: Contact Form with name, email, and message box -->
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <form action="contact">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name..."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name..."
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+
+        <label for="message">Message</label>
+        <input
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Type your message here..."
+        />
+      </form>
+    </article>
     <script src="assets/script.js"></script>
   </body>
 </html>
