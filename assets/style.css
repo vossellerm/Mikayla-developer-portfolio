@@ -1,93 +1,87 @@
 * {
   background-color: #391054;
   color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* TODO: format header and nav bar */
 /* Name on left, menu on right */
 /* format links */
-article.header {
-  position: relative;
-  width: 100%;
-  height: 100px;
+header {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #5a2575;
 }
 
 h1.name {
-  font-size: 52px;
-  display: block;
-  position: absolute;
-  left: 40px;
-
-  margin: 20px 0;
-  background-color: #5a2575;
+  font-size: 50px;
+  flex: 1 700px;
+  padding: 40px 0 40px 50px;
+  text-align: left;
+  background-color: transparent;
 }
 
-ul.nav {
-  list-style-type: none;
-  position: absolute;
-
-  background-color: #5a2575;
-  right: 40px;
-  margin: 37px 0;
-}
-
-li {
-  display: inline;
-  padding: 0 20px;
-  font-size: 22px;
-  background-color: #5a2575;
+nav {
+  flex: 4;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
 }
 
 a {
   text-decoration: none;
-  background-color: #5a2575;
+  background-color: transparent;
+  padding: 0 20px;
 }
 
 h2 {
   font-size: 40px;
   color: #c9a8f1;
-  text-indent: 20px;
-  display: block;
-  position: absolute;
+
+  padding: 40px;
 }
 /* TODO: Format About Me Section */
 /* Title and text on left, image on right */
 
 #about {
-  height: 500px;
-  position: relative;
-  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: #c9a8f1 solid 1px;
+}
+
+div.about {
+  flex: 2 700px;
 }
 
 img.profile {
   height: 300px;
-  position: absolute;
-  display: inline;
   border-radius: 50%;
-  margin: 100px 0 50px;
-  right: 100px;
+  margin: 55px 80px 50px 0;
+}
+
+#image-cropper {
+  flex: 1;
 }
 
 p.bio {
-  display: block;
   font-size: large;
   line-height: 1.5;
   text-align: justify;
-  position: absolute;
-  margin: 140px 0 90px;
-  width: 400px;
-  height: 220px;
-  left: 100px;
+  margin: 80px 80px 20px 80px;
 }
 
 /* TODO: Format My Work Section */
 /* Title on left */
 /* Application 1 image length of screen, text in corner */
 #work {
-  position: relative;
-  height: 1400px;
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: #c9a8f1 solid 1px;
 }
 
@@ -102,7 +96,6 @@ h3 {
 
 section.equivont {
   position: relative;
-  top: 100px;
 }
 
 h3.equivont {
@@ -116,22 +109,21 @@ h3.equivont {
 }
 /* Application 2-5 two images per row, text bottom center */
 .small-applications {
-  position: relative;
-  width: 100%;
-  height: 800px;
-  text-align: center;
-  top: 100px;
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.sjc-cds {
-  width: 50%;
-  position: relative;
-  position: absolute;
+  flex: 0 1 600px;
 }
 
 h3.sjc-cds {
-  bottom: 8px;
-  padding: 5px 10px 5px 20px;
+  bottom: -80%;
+  padding: 3px 0;
+  position: relative;
+  width: 100%;
 }
 
 #sjc-cds {
@@ -139,18 +131,18 @@ h3.sjc-cds {
   height: 400px;
   object-fit: cover;
   display: block;
+  border: solid 3px #5a2575;
 }
 
 section.coastline {
-  width: 50%;
-  margin-left: 50%;
-  position: absolute;
+  flex: 0 1 600px;
 }
 
 h3.coastline {
-  bottom: 8px;
-  padding: 5px 20px 5px 10px;
-  right: 0px;
+  bottom: -80%;
+  padding: 3px 0;
+  position: relative;
+  width: 100%;
 }
 
 #coastline {
@@ -158,17 +150,18 @@ h3.coastline {
   height: 400px;
   object-fit: cover;
   display: block;
+  border: solid 3px #5a2575;
 }
 
 section.sps {
-  width: 50%;
-  top: 400px;
-  position: absolute;
+  flex: 0 1 600px;
 }
 
 h3.sps {
-  bottom: 8px;
-  padding: 5px 10px 5px 20px;
+  bottom: -80%;
+  padding: 3px 0;
+  position: relative;
+  width: 100%;
 }
 
 #sps {
@@ -177,19 +170,18 @@ h3.sps {
   object-fit: cover;
   top: 400px;
   display: block;
+  border: solid 3px #5a2575;
 }
 
 section.sjcec {
-  width: 50%;
-  margin-left: 50%;
-  top: 400px;
-  position: absolute;
+  flex: 0 1 600px;
 }
 
 h3.sjcec {
-  bottom: 8px;
-  padding: 5px 20px 5px 10px;
-  right: 0px;
+  bottom: -80%;
+  padding: 3px 0;
+  position: relative;
+  width: 100%;
 }
 
 #sjcec {
@@ -198,19 +190,22 @@ h3.sjcec {
   object-fit: cover;
   top: 400px;
   display: block;
+  border: solid 3px #5a2575;
 }
 
 #contact {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: #c9a8f1 solid 1px;
 }
 
 h2.contact {
-  position: absolute;
+  display: flex;
 }
 
 form {
-  position: absolute;
-  margin: 150px 20% 0 20%;
+  display: flexbox;
+  margin: 50px 20% 50px 20%;
   width: 75%;
   line-height: 3;
 }
@@ -278,34 +273,25 @@ textarea {
 
 footer {
   width: 100%;
-  height: 100px;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   margin: 650px 0 0 0;
   background-color: #5a2575;
-  padding: 0 20% 0 20%;
 }
 
-span {
-  display: block;
-  position: absolute;
-  top: 20px;
-  padding: 0 40px;
-  text-decoration: none;
-  background-color: #5a2575;
+nav.footer {
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
 }
 
-ul.contact {
-  list-style-type: none;
-  position: absolute;
-  background-color: #5a2575;
-  margin: 37px 0;
-}
-
-li.contact {
-  display: inline;
-  padding: 0 20px;
-  font-size: 22px;
-  background-color: #5a2575;
+nav.footer a {
+  padding: 20px;
 }
 
 /* TODO: Format Contact Me Section */
@@ -318,3 +304,27 @@ li.contact {
 /* TODO: Format contact info */
 /* all elements in line across page */
 /* format links */
+
+@media screen and (max-width: 768px) {
+  h1.name,
+  nav,
+  nav.footer {
+    flex-direction: column;
+  }
+  h1.name {
+    text-align: center;
+    padding: 10px 0 5px;
+  }
+  a {
+    padding: 10px 0;
+  }
+  div.about {
+    text-align: center;
+  }
+  p.bio {
+    text-align: center;
+  }
+  img.profile {
+    margin: 55px 150px 50px;
+  }
+}

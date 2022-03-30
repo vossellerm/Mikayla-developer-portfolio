@@ -11,44 +11,45 @@
     <!-- TODO: Header with My Name-->
     <!-- TODO: Navigation bar: About Me, My Work, Contact Me -->
     <!-- TODO: Link Nav Bar to sections-->
-    <article class="header">
+    <header>
       <h1 class="name">Mikayla Vosseller</h1>
       <nav>
-        <ul class="nav">
-          <li><a class="nav" href="#about">About Me</a></li>
-          <li><a class="nav" href="#work">My Work</a></li>
-          <li><a class="nav" href="#contact">Contact Me</a></li>
-        </ul>
+        <a href="#about">About Me</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact Me</a>
       </nav>
-    </article>
+    </header>
 
     <!-- TODO: About Me Section -->
     <!-- TODO: Photo -->
     <!-- TODO: About Me Bio -->
     <article id="about">
-      <h2>About Me</h2>
-      <div class="image-cropper">
+      <div class="about">
+        <h2>About Me</h2>
+
+        <p class="bio">
+          Mikayla Vosseller is an avid equestrian that combines her passion for
+          horse sports and marketing in her current role as the Marketing
+          Manager at Equivont, an equestrian's one-stop-shop for products and
+          services. Mikayla uses her digitial media and marketing skills to help
+          small equestrian businesses elevate their online presence, whether it
+          be through a new website or social media.
+        </p>
+      </div>
+      <div id="image-cropper">
         <img
           src="images/profile.png"
           alt="Mikayla Vosseller and her horse"
           class="profile"
         />
       </div>
-      <p class="bio">
-        Mikayla Vosseller is an avid equestrian that combines her passion for
-        horse sports and marketing in her current role as the Marketing Manager
-        at Equivont, an equestrian's one-stop-shop for products and services.
-        Mikayla uses her digitial media and marketing skills to help small
-        equestrian businesses elevate their online presence, whether it be
-        through a new website or social media.
-      </p>
     </article>
 
     <!-- TODO: My Work Section -->
     <!-- TODO: First Application, title & larger img than rest, link to application -->
     <!-- TODO: Second - Fourth Application, grid 2x2 with titles, link to applications that open in new tab -->
     <article id="work">
-      <h2>My Work</h2>
+      <h2 class="work">My Work</h2>
       <section class="equivont">
         <h3 class="equivont">Equivont</h3>
         <a href="https://www.equivont.com/" target="_blank"
@@ -58,7 +59,7 @@
             id="equivont"
         /></a>
       </section>
-      <article class="small-applications">
+      <div class="small-applications">
         <section class="sjc-cds">
           <h3 class="sjc-cds">
             San Juan Capistrano Chapter of the California Dressage Society
@@ -98,7 +99,7 @@
               id="sjcec"
           /></a>
         </section>
-      </article>
+      </div>
     </article>
 
     <!-- TODO: Contac Me Section -->
@@ -147,20 +148,17 @@
       </form>
     </article>
     <footer class="contact">
-      <ul class="contact">
-        <li class="contact"><a href="tel:8588880572">858.888.0572</a></li>
-        <li class="contact">
-          <a href="mailto:vossellerm@gmail.com">vossellerm@gmail.com</a>
-        </li>
-        <li class="contact">
-          <a href="https://github.com/vossellerm">GitHub</a>
-        </li>
-        <li class="contact">
-          <a href="https://www.linkedin.com/in/mikayla-vosseller-134b891a9/"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
+      <nav class="footer">
+        <a href="tel:8588880572">858.888.0572</a>
+
+        <a href="mailto:vossellerm@gmail.com">vossellerm@gmail.com</a>
+
+        <a href="https://github.com/vossellerm">GitHub</a>
+
+        <a href="https://www.linkedin.com/in/mikayla-vosseller-134b891a9/"
+          >LinkedIn</a
+        >
+      </nav>
     </footer>
     <script src="assets/script.js"></script>
   </body>
