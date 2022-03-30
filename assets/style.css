@@ -37,7 +37,6 @@ nav {
 a {
   text-decoration: none;
   background-color: transparent;
-  padding: 0 20px;
 }
 
 h2 {
@@ -89,19 +88,21 @@ h3 {
   text-align: center;
   background-color: transparent;
   margin: 0;
-  position: absolute;
+
   background-color: #c9a8f1;
   color: #391054;
 }
 
 section.equivont {
   position: relative;
+  overflow: hidden;
 }
 
 h3.equivont {
   font-size: 70px;
   bottom: 16px;
   padding: 5px 10px 5px 40px;
+  position: absolute;
 }
 
 #equivont {
@@ -117,12 +118,13 @@ h3.equivont {
 
 section.sjc-cds {
   flex: 0 1 600px;
+  position: relative;
 }
 
 h3.sjc-cds {
-  bottom: -80%;
-  padding: 3px 0;
-  position: relative;
+  bottom: 23px;
+  padding: 3px 3px;
+  position: absolute;
   width: 100%;
 }
 
@@ -136,12 +138,13 @@ h3.sjc-cds {
 
 section.coastline {
   flex: 0 1 600px;
+  position: relative;
 }
 
 h3.coastline {
-  bottom: -80%;
-  padding: 3px 0;
-  position: relative;
+  bottom: 23px;
+  padding: 3px 3px;
+  position: absolute;
   width: 100%;
 }
 
@@ -155,12 +158,13 @@ h3.coastline {
 
 section.sps {
   flex: 0 1 600px;
+  position: relative;
 }
 
 h3.sps {
-  bottom: -80%;
-  padding: 3px 0;
-  position: relative;
+  bottom: 23px;
+  padding: 3px 3px;
+  position: absolute;
   width: 100%;
 }
 
@@ -175,12 +179,13 @@ h3.sps {
 
 section.sjcec {
   flex: 0 1 600px;
+  position: relative;
 }
 
 h3.sjcec {
-  bottom: -80%;
-  padding: 3px 0;
-  position: relative;
+  bottom: 23px;
+  padding: 3px 3px;
+  position: absolute;
   width: 100%;
 }
 
@@ -275,7 +280,6 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 650px 0 0 0;
   background-color: #5a2575;
 }
 
@@ -325,6 +329,8 @@ nav.footer a {
     text-align: center;
   }
   img.profile {
-    margin: 55px 150px 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 23px 0px;
   }
 }
