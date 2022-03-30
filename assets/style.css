@@ -1,13 +1,87 @@
+* {
+  background-color: #391054;
+  color: white;
+}
+
 /* TODO: format header and nav bar */
 /* Name on left, menu on right */
 /* format links */
+article.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #5a2575;
+}
 
+h1.name {
+  font-size: 52px;
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 20px;
+  margin: 0;
+  background-color: #5a2575;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 0 70%;
+  position: absolute;
+  top: 37px;
+  background-color: #5a2575;
+}
+
+li {
+  display: inline;
+  padding: 0 10px;
+  font-size: 22px;
+  background-color: #5a2575;
+}
+
+a.nav {
+  text-decoration: none;
+  background-color: #5a2575;
+}
+
+h2 {
+  font-size: 40px;
+  color: #c9a8f1;
+  text-indent: 20px;
+}
 /* TODO: Format About Me Section */
 /* Title and text on left, image on right */
+article #about {
+  position: absolute;
+  display: block;
+  height: min-content;
+}
+
+img.profile {
+  width: 30%;
+  margin: 0 10%;
+  position: relative;
+  left: 50%;
+  display: inline;
+}
+
+p.bio {
+  display: block;
+  width: 50%;
+  font-size: large;
+  line-height: 1.5;
+  text-align: justify;
+  position: relative;
+  bottom: 200px;
+  margin-left: 10%;
+  width: 40%;
+}
 
 /* TODO: Format My Work Section */
 /* Title on left */
 /* Application 1 image length of screen, text in corner */
+#equivont {
+  width: 100%;
+}
 /* Application 2-5 two images per row, text bottom center */
 
 /* TODO: Format Contact Me Section */
