@@ -14,7 +14,7 @@
     <article class="header">
       <h1 class="name">Mikayla Vosseller</h1>
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a class="nav" href="#about">About Me</a></li>
           <li><a class="nav" href="#work">My Work</a></li>
           <li><a class="nav" href="#contact">Contact Me</a></li>
@@ -27,18 +27,20 @@
     <!-- TODO: About Me Bio -->
     <article id="about">
       <h2>About Me</h2>
-      <div class="image-cropper"><img
-        src="images/profile.png"
-        alt="Mikayla Vosseller and her horse"
-        class="profile"
-      /></div>
+      <div class="image-cropper">
+        <img
+          src="images/profile.png"
+          alt="Mikayla Vosseller and her horse"
+          class="profile"
+        />
+      </div>
       <p class="bio">
         Mikayla Vosseller is an avid equestrian that combines her passion for
         horse sports and marketing in her current role as the Marketing Manager
         at Equivont, an equestrian's one-stop-shop for products and services.
         Mikayla uses her digitial media and marketing skills to help small
         equestrian businesses elevate their online presence, whether it be
-        through a new website or current social media.
+        through a new website or social media.
       </p>
     </article>
 
@@ -56,47 +58,57 @@
             id="equivont"
         /></a>
       </section>
-      <section class="sjc-cds">
-        <h3>San Juan Capistrano Chapter of the California Dressage Society</h3>
-        <a href="https://www.sjc-cds.org/" target="_blank"
-          ><img
-            src="images/SJC-CDS.jpeg"
-            alt="Dressage rider holding reins on horse with braids"
-            id="sjc-cds"
-        /></a>
-      </section>
-      <section class="coastline">
-        <h3>Coastline Hunters & Jumpers</h3>
-        <a href="https://www.coastlinehuntersandjumpers.com/" target="_blank"
-          ><img
-            src="images/Coastline.jpeg"
-            alt="Showjumping horse and rider landing off of Grand Prix oxer"
-            id="coastline"
-        /></a>
-      </section>
-      <section class="sps">
-        <h3>Sarah Pollock Sporthorses</h3>
-        <a href="https://www.sarahpollocksporthorses.com/" target="_blank"
-          ><img
-            src="images/SPS.jpeg"
-            alt="Showjumping horse and rider jumping an oxer"
-            id="sps"
-        /></a>
-      </section>
-      <section class="sjcec">
-        <h2>San Juan Capistrano Equestrian Coalition</h2>
-        <a href="https://sanjuanequestrian.org/" target="_blank"
-          ><img src="images/SJCEC.jpeg" alt="Girl handwalking horse" id="sjcec"
-        /></a>
-      </section>
+      <article class="small-applications">
+        <section class="sjc-cds">
+          <h3 class="sjc-cds">
+            San Juan Capistrano Chapter of the California Dressage Society
+          </h3>
+
+          <a href="https://www.sjc-cds.org/" target="_blank"
+            ><img
+              src="images/SJC-CDS.jpeg"
+              alt="Dressage rider holding reins on horse with braids"
+              id="sjc-cds"
+          /></a>
+        </section>
+        <section class="coastline">
+          <h3 class="coastline">Coastline Hunters & Jumpers</h3>
+          <a href="https://www.coastlinehuntersandjumpers.com/" target="_blank"
+            ><img
+              src="images/Coastline.jpeg"
+              alt="Showjumping horse and rider landing off of Grand Prix oxer"
+              id="coastline"
+          /></a>
+        </section>
+        <section class="sps">
+          <h3 class="sps">Sarah Pollock Sporthorses</h3>
+          <a href="https://www.sarahpollocksporthorses.com/" target="_blank"
+            ><img
+              src="images/SPS.jpeg"
+              alt="Showjumping horse and rider jumping an oxer"
+              id="sps"
+          /></a>
+        </section>
+        <section class="sjcec">
+          <h3 class="sjcec">San Juan Capistrano Equestrian Coalition</h3>
+          <a href="https://sanjuanequestrian.org/" target="_blank"
+            ><img
+              src="images/SJCEC.jpeg"
+              alt="Girl handwalking horse"
+              id="sjcec"
+          /></a>
+        </section>
+      </article>
     </article>
 
     <!-- TODO: Contac Me Section -->
     <!-- TODO: Contact Form with name, email, and message box -->
     <article id="contact">
-      <h2>Contact Me</h2>
+      <h2 class="contact">Contact Me</h2>
       <form action="contact">
-        <label for="fname">First Name</label>
+        <label for="fname" class="fname">First Name</label>
+        <label for="lname" class="lname">Last Name</label>
+        <br />
         <input
           type="text"
           id="fname"
@@ -104,7 +116,6 @@
           placeholder="Your name..."
         />
 
-        <label for="lname">Last Name</label>
         <input
           type="text"
           id="lname"
@@ -112,38 +123,45 @@
           placeholder="Your last name..."
         />
 
+        <br />
+
         <label for="email">Email</label>
+        <br />
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Email Address"
         />
-
+        <br />
         <label for="message">Message</label>
+        <br />
         <input
           type="text"
           name="message"
           id="message"
           placeholder="Type your message here..."
         />
-        <input type="submit" name="submit" value="Submit" />
+        <br />
+        <input type="submit" name="submit" id="submit" value="Submit" />
       </form>
-      <div class="contact">
-        <span class="phone"><a href="tel:8588880572">858.888.0572</a></span>
-        <span class="email"
-          ><a href="mailto:vossellerm@gmail.com">vossellerm@gmail.com</a></span
-        >
-        <span class="github"
-          ><a href="https://github.com/vossellerm">GitHub</a></span
-        >
-        <span class="linkedin"
-          ><a href="https://www.linkedin.com/in/mikayla-vosseller-134b891a9/"
-            >LinkedIn</a
-          ></span
-        >
-      </div>
     </article>
+    <footer class="contact">
+      <ul class="contact">
+        <li class="contact"><a href="tel:8588880572">858.888.0572</a></li>
+        <li class="contact">
+          <a href="mailto:vossellerm@gmail.com">vossellerm@gmail.com</a>
+        </li>
+        <li class="contact">
+          <a href="https://github.com/vossellerm">GitHub</a>
+        </li>
+        <li class="contact">
+          <a href="https://www.linkedin.com/in/mikayla-vosseller-134b891a9/"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
     <script src="assets/script.js"></script>
   </body>
 </html>
