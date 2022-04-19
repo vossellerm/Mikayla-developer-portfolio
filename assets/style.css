@@ -108,6 +108,13 @@ h3 {
   color: #391054;
 }
 
+h3 a {
+  color: #391054;
+  text-decoration: underline;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
 section.equivont {
   position: relative;
   overflow: hidden;
@@ -291,7 +298,6 @@ h2.contact {
 }
 
 form {
-  display: flexbox;
   margin: 50px 20% 50px 20%;
   width: 75%;
   line-height: 3;
