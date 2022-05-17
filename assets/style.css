@@ -266,19 +266,19 @@ h3.weather {
   border: solid 3px #5a2575;
 }
 
-section.password {
+section.doggo {
   flex: 0 1 600px;
   position: relative;
 }
 
-h3.password {
+h3.doggo {
   bottom: 23px;
   padding: 3px 3px;
   position: absolute;
   width: 100%;
 }
 
-#password {
+#doggo {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -361,7 +361,7 @@ h2.contact {
   #sjcec,
   #market,
   #weather,
-  #password {
+  #doggo {
     height: 275px;
     border: none;
     margin-top: 10px;
@@ -381,7 +381,7 @@ h2.contact {
   h3.sjcec,
   h3.market,
   h3.weather,
-  h3.password {
+  h3.doggo {
     padding: 0;
   }
 }
