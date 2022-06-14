@@ -224,6 +224,27 @@ h3.sjcec {
   border: solid 3px #5a2575;
 }
 
+section.the {
+  flex: 0 1 600px;
+  position: relative;
+}
+
+h3.the {
+  bottom: 23px;
+  padding: 3px 3px;
+  position: absolute;
+  width: 100%;
+}
+
+#the {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  top: 400px;
+  display: block;
+  border: solid 3px #5a2575;
+}
+
 section.market {
   flex: 0 1 600px;
   position: relative;
